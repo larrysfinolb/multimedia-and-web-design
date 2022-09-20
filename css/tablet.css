@@ -1,0 +1,12 @@
+/* CONTAINER */
+.container__video {
+  width: auto;
+  height: 90%;
+  top: 0;
+  right: -5%;
+}
+.container__astro {
+  left: 12%;
+  width: 20%;
+  transform: scaleX(-1);
+}

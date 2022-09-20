@@ -5,24 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multimedia y Diseño Web</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)" />
   </head>
   <body>
-    <div>
-      <header>
-        <picture><img src="" alt="" /></picture>
-        <a href="#">Inicio</a>
-      </header>
+    <div class="container">
+      <header></header>
 
-      <main>
-        <section>
-          <h1>Multimedia y Diseño Web</h1>
-          <p></p>
-          <a href="./proyectos.html">Ir a los proyectos</a>
-        </section>
-        <div>
-          <span></span>
-        </div>
-      </main>
+      <main></main>
+
+      <!-- ALL BACKGROUND -->
+      <div>
+        <video class="container__video" loop muted autoplay>
+          <source
+            type="video/mp4; codecs=avc1.4D401E,mp4a.40.2"
+            src="https://github.githubassets.com/images/modules/site/home/globe-900.h264.mp4" />
+        </video>
+        <picture class="container__bg">
+          <img src="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="" />
+        </picture>
+        <picture class="container__astro">
+          <img src="https://github.githubassets.com/images/modules/site/home/astro-mona.webp" alt="" />
+        </picture>
+        <svg
+          class="container__floor"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          preserveAspectRatio="none"
+          viewBox="0 0 1680 40">
+          <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+        </svg>
+      </div>
     </div>
   </body>
 </html>
