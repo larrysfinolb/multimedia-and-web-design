@@ -1,24 +1,28 @@
+html {
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
 /* CONTAINER */
 .container {
   position: relative;
-  height: 100vh;
-  max-height: 100vh;
   background-color: #040d21;
+  min-height: 100vh;
   overflow: hidden;
 }
 .container__world {
   position: absolute;
+  top: 0;
   width: 120%;
   left: -10%;
 }
-.container__bg {
+.container__glow {
   position: absolute;
   width: 200%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container__bg img {
+.container__glow img {
   vertical-align: top;
   width: 100%;
 }
@@ -41,9 +45,71 @@
   width: 100%;
 }
 
+/* HEADER */
+.header {
+  position: fixed;
+  width: 100vw;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 2;
+}
+.header__logo svg {
+  height: 32px;
+  width: 32px;
+  z-index: inherit;
+}
+.header__button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  z-index: inherit;
+}
+
+/* MAIN */
+.main {
+  height: 100vh;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.main__section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: inherit;
+}
+.main__title {
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+}
+.main__paragraph {
+  font-size: 20px;
+  text-align: center;
+  color: #8193b2;
+}
+.main__button {
+  text-align: center;
+  line-height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2ea44f;
+}
+
 /* MEDIAS QUERIES */
 /* TABLE */
-@media (min-width: 596px) {
+@media (min-width: 426px) {
   /* CONTAINER */
   .container__world {
     left: auto;
@@ -55,5 +121,17 @@
     width: 25%;
     right: 5%;
     bottom: -2.5%;
+  }
+
+  /* MAIN */
+  .main__section {
+    width: 60%;
+  }
+  .main__title {
+    font-size: 48px;
+    text-align: left;
+  }
+  .main__paragraph {
+    text-align: left;
   }
 }
