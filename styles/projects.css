@@ -6,6 +6,25 @@ body {
   overflow: hidden;
   line-height: 1.5;
 }
+/* HEADER */
+.header {
+  position: fixed;
+  width: 100vw;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  z-index: 2;
+}
+.header__logo svg {
+  height: 32px;
+  width: 32px;
+  z-index: inherit;
+}
+.octicon {
+  fill: #fff;
+}
 main {
   overflow: hidden;
   background-color: #040d21;

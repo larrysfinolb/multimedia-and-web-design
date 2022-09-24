@@ -69,8 +69,19 @@ html {
   color: #ffffff;
   text-decoration: none;
   z-index: inherit;
+  transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
 }
-
+.header__button:hover {
+  background-color: #fff;
+  color: #333;
+}
+.octicon {
+  fill: #fff;
+}
 /* MAIN */
 .main {
   height: 100vh;
@@ -105,6 +116,14 @@ html {
   text-decoration: none;
   color: #ffffff;
   background-color: #2ea44f;
+  transition: background 0.15s ease-out;
+  -webkit-transition: background 0.15s ease-out;
+  -moz-transition: background 0.15s ease-out;
+  -ms-transition: background 0.15s ease-out;
+  -o-transition: background 0.15s ease-out;
+}
+.main__button:hover {
+  background-color: hsl(137, 56%, 28%);
 }
 
 /* MEDIAS QUERIES */
