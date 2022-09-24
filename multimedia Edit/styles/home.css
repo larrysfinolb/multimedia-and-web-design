@@ -1,0 +1,139 @@
+/* CONTAINER */
+.container {
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #040d21;
+  overflow: hidden;
+}
+.container__world {
+  position: absolute;
+  width: 120%;
+  left: -10%;
+}
+.container__bg {
+  position: absolute;
+  width: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container__bg img {
+  vertical-align: top;
+  width: 100%;
+}
+.container__floor {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  max-height: 150px;
+  bottom: 0;
+  left: 0;
+}
+.container__astro {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 25%;
+}
+.container__astro img {
+  vertical-align: top;
+  width: 100%;
+}
+.centro{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.boton{
+  
+   width: 75px;
+  height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: 700;
+  background-color: #040d21;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin: 2px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+}
+
+.cat{
+justify-content: center;
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  
+
+}
+.espaciado{
+display: flex;
+justify-content: space-between;
+}
+
+
+.titulo{
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:60px;
+}
+.parrafo{
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 50%;
+}
+.formulario{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  background: #040d21;
+  padding: 30px;
+  margin: auto;
+  margin-left: 100px;
+  border-radius: 5px;
+  color: #ffffff;
+  
+}
+.formulario-email{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 3000px;
+  height: 50px;
+  border-radius: 10px;
+}
+.boton-email{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  border-radius: 5px;
+  width: 90px;
+  height: 50px;
+  text-decoration: none;
+
+}
+.formulario .boton-email{
+  border-radius: 10px;
+  width: 800px;
+  color: white;
+  background-color:chartreuse;
+}
+/* MEDIAS QUERIES */
+/* TABLE */
+@media (min-width: 596px) {
+  /* CONTAINER */
+  .container__world {
+    left: auto;
+    right: -5%;
+    width: auto;
+    height: 100%;
+  }
+  .container__astro {
+    width: 25%;
+    right: 5%;
+    bottom: -2.5%;
+  }
+}
